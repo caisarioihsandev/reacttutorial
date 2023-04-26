@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavbarComp from './Component/Fungsional/NavbarComp';
 import HomePage from './Component/Fungsional/HomePage';
 import AboutComp from './Component/Fungsional/AboutComp';
+// import DetailComp from './Component/Fungsional/DetailComp';
+import ListComp from './Component/Class/ListComp';
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
         <Routes>
           <Route exact path="/" Component={HomePage} />
           <Route exact path="/about" Component={AboutComp} />
+          <Route exact path="/mahasiswa" Component={ListComp} />
+          {/* <Route exact path="/detail/:id" Component={DetailComp} /> */}
         </Routes>
       </BrowserRouter>
     </div>
